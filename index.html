@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahez | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white selection:bg-white selection:text-black">
+
+
+    <header class="fixed-top py-2 border-bottom border-secondary border-opacity-10 bg-black bg-opacity-80 backdrop-blur">
+        <div class="container small-container d-flex justify-content-between align-items-center sm-px-4">
+            <a class="brand-link fw-bold tracking-tighter m-0 text-decoration-none text-white" href="#">Bahez Khalid Salih</a>
+            <button id="menu-toggle" class="btn border-0 p-0 d-flex align-items-center shadow-none">
+                <span class="tiny-text opacity-40 text-uppercase tracking-widest me-3 d-none d-sm-inline-block">Menu</span>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+
+    <div id="menu-overlay" class="menu-overlay d-flex align-items-center justify-content-center">
+        <button id="menu-close" class="btn border-0 text-white opacity-40 hover-opacity-100 position-absolute top-0 end-0 m-3 p-3 transition-all">
+            <i class="fas fa-times fa-sm"></i>
+        </button>
+        <nav class="text-center w-100 px-4">
+            <ul class="list-unstyled mb-0">
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+                <li class="menu-item"><a href="#projects" class="menu-link">Work</a></li>
+                <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section id="home" class="hero-compact d-flex align-items-center">
+        <div class="container small-container">
+            <div class="reveal">
+                <h1 class="display-5 fw-bold tracking-tighter mb-3">Bahez.</h1>
+                <p class="tiny-text opacity-40 mb-4 text-uppercase">Developer & Creative Visionary</p>
+                <div class="d-flex gap-2">
+                    <a href="#projects" class="btn btn-outline-light btn-tiny rounded-0">Projects</a>
+                    <a href="#contact" class="btn btn-light btn-tiny rounded-0">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-5 border-top border-secondary border-opacity-10">
+        <div class="container small-container">
+            <div class="row g-4 align-items-start">
+                <div class="col-md-6 reveal">
+                    <h2 class="tiny-text text-uppercase tracking-widest opacity-25 mb-3">About</h2>
+                    <p class="small text-secondary leading-relaxed mb-0">Specializing in minimalist systems. Focus on precision, speed, and meaningful user journeys.</p>
+                </div>
+                <div class="col-md-6 reveal delay-100">
+                    <div class="row row-cols-2 g-2">
+                        <div class="col"><span class="badge-custom">html</span></div>
+                        <div class="col"><span class="badge-custom">css</span></div>
+                        <div class="col"><span class="badge-custom">javascript</span></div>
+                        <div class="col"><span class="badge-custom">php</span></div>
+                          <div class="col"><span class="badge-custom">bootstrap</span></div>
+                          <div class="col"><span class="badge-custom">tailwind</span></div>
+                          <div class="col"><span class="badge-custom">react</span></div>
+                          <div class="col"><span class="badge-custom">node.js</span></div>
+                            <div class="col"><span class="badge-custom">mysql</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-5 border-top border-secondary border-opacity-10">
+        <div class="container small-container">
+            <h2 class="tiny-text text-uppercase tracking-widest opacity-25 mb-4 reveal">Works</h2>
+            <div class="row g-3">
+                <div class="col-md-6 reveal">
+                    <div class="project-thumb bg-dark p-3 border border-secondary border-opacity-10 transition-all">
+                        <h3 class="small fw-semibold mb-1">smartmeter</h3>
+                        <p class="tiny-text text-secondary mb-0">High-performance engine.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-100">
+                    <div class="project-thumb bg-dark p-3 border border-secondary border-opacity-10 transition-all">
+                        <h3 class="small fw-semibold mb-1">Analytics</h3>
+                        <p class="tiny-text text-secondary mb-0">Real-time dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5">
+        <div class="container small-container text-center reveal">
+            <h2 class="tiny-text text-uppercase tracking-widest opacity-25 mb-4">Contact</h2>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://www.facebook.com/share/18AC5YGz19/?mibextid=wwXIfr" target="_blank" class="text-white opacity-25 hover-opacity-100 transition-all"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ameer_.dev1?igsh=b3RwMHFhOGdmeDA0&utm_source=qr" target="_blank" class="text-white opacity-25 hover-opacity-100 transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/ameeragha" target="_blank" class="text-white opacity-25 hover-opacity-100 transition-all"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/qr/V6C6TE24AOR2N1" target="_blank" class="text-white opacity-25 hover-opacity-100 transition-all"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:bahezxalid46@gmail.com" class="text-white opacity-25 hover-opacity-100 transition-all"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="tiny-text opacity-10 m-0">&copy; 2026 Bahez Khalid Salih.</p>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
