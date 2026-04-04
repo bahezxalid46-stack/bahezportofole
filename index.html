@@ -18,7 +18,7 @@
 
     <header class="fixed-top py-2 border-bottom border-secondary border-opacity-10 bg-black bg-opacity-80 backdrop-blur">
         <div class="container small-container d-flex justify-content-between align-items-center sm-px-4">
-            <a class="brand-link fw-bold tracking-tighter m-0 text-decoration-none text-white" href="#">Bahez Khalid Salih</a>
+            <a class="brand-link fw-bold tracking-tighter m-0 text-decoration-none text-white cursor-pointer" id="profile-trigger" style="cursor: pointer;">Bahez Khalid Salih</a>
             <button id="menu-toggle" class="btn border-0 p-0 d-flex align-items-center shadow-none">
                 <span class="tiny-text opacity-40 text-uppercase tracking-widest me-3 d-none d-sm-inline-block">Menu</span>
                 <div class="burger">
@@ -42,6 +42,28 @@
                 <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
             </ul>
         </nav>
+    </div>
+    </div>
+
+    <!-- Profile Overlay -->
+    <div id="profile-overlay" class="profile-overlay d-flex align-items-center justify-content-center">
+        <div class="profile-card position-relative text-center">
+            <button id="profile-close" class="btn border-0 text-white opacity-40 hover-opacity-100 position-absolute top-0 end-0 m-2 transition-all">
+                <i class="fas fa-times fa-sm"></i>
+            </button>
+            <div class="profile-img-wrapper mb-4">
+                <img src="Capture.PNG" alt="Bahez Khalid Salih" class="profile-img shadow-lg">
+            </div>
+            <div class="px-4 pb-4">
+                <h2 class="h3 fw-bold tracking-tighter mb-2 text-white">Bahez Khalid Salih</h2>
+                <p class="tiny-text opacity-40 text-uppercase tracking-widest mb-3">Developer & Creative Visionary</p>
+                <div class="bio-container py-3 border-top border-secondary border-opacity-10 mt-3 text-start">
+                    <p class="text-secondary small leading-relaxed m-0">
+                        Bahez Khalid Salih is a passionate Web Developer and Creative Visionary specialized in building modern, high-performance digital experiences. With a focus on precision and minimalist design, he transforms complex ideas into elegant solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 

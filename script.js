@@ -19,6 +19,29 @@ document.addEventListener('DOMContentLoaded', () => {
     menuClose.addEventListener('click', closeMenu);
 
 
+    const profileTrigger = document.getElementById('profile-trigger');
+    const profileClose = document.getElementById('profile-close');
+    const profileOverlay = document.getElementById('profile-overlay');
+
+    const openProfile = (e) => {
+        if (e) e.preventDefault();
+        profileOverlay.classList.add('active');
+        body.classList.add('menu-open');
+    };
+
+    const closeProfile = () => {
+        profileOverlay.classList.remove('active');
+        body.classList.remove('menu-open');
+    };
+
+    if (profileTrigger) profileTrigger.addEventListener('click', openProfile);
+    if (profileClose) profileClose.addEventListener('click', closeProfile);
+
+    // Close profile on background click
+    profileOverlay.addEventListener('click', (e) => {
+        if (e.target === profileOverlay) closeProfile();
+    });
+
     document.querySelectorAll('.menu-item a').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
