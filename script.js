@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (profileTrigger) profileTrigger.addEventListener('click', openProfile);
     if (profileClose) profileClose.addEventListener('click', closeProfile);
 
-    // Close profile on background click
+    
     profileOverlay.addEventListener('click', (e) => {
         if (e.target === profileOverlay) closeProfile();
     });
@@ -74,4 +74,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+    const initVisitorCounter = async () => {
+        const visitorCountElement = document.getElementById('visitor-count');
+        if (!visitorCountElement) return;
+
+        // Using CounterAPI for global counting
+        // Namespace: bahez-profile, Key: visits
+        const namespace = 'bahez-profile';
+        const key = 'visits';
+        const hasIncremented = sessionStorage.getItem('bahez_profile_incremented');
+        
+        // If already incremented this session, just get the count. Otherwise, increment it.
+        const action = hasIncremented ? 'get' : 'up';
+        const apiUrl = `https://api.counterapi.dev/v1/${namespace}/${key}/${action}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) throw new Error('API Response Error');
+            
+            const data = await response.json();
+            const count = data.count;
+
+            // Update UI
+            visitorCountElement.textContent = count.toLocaleString();
+            
+            // Mark as incremented for this session
+            if (!hasIncremented) {
+                sessionStorage.setItem('bahez_profile_incremented', 'true');
+            }
+            
+            // Keep a local copy just in case
+            localStorage.setItem('bahez_profile_last_count', count);
+
+        } catch (error) {
+            console.error('Global Visitor Counter failed, using local fallback:', error);
+            
+            // Fallback to local storage if API fails
+            let localCount = parseInt(localStorage.getItem('bahez_profile_last_count')) || 0;
+            if (!hasIncremented) {
+                localCount++;
+                localStorage.setItem('bahez_profile_last_count', localCount);
+                sessionStorage.setItem('bahez_profile_incremented', 'true');
+            }
+            visitorCountElement.textContent = localCount.toLocaleString();
+        }
+    };
+
+    initVisitorCounter();
 });
