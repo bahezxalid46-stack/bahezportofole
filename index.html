@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahez Khalid Salih | Web Developer</title>
+    <meta name="description" content="Bahez Khalid Salih - Web Developer building websites, web apps and systems for businesses across Kurdistan and Iraq.">
+    <meta name="author" content="Bahez Khalid Salih">
+    <meta property="og:title" content="Bahez Khalid Salih | Web Developer">
+    <meta property="og:description" content="Websites, web apps and systems that work as hard as you do.">
+    <meta property="og:image" content="Capture.PNG">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0a1220">
+    <link rel="icon" href="Capture.PNG">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Instrument+Serif:ital@1&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <a href="#home" class="to-top" id="to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="brand">
+                <span class="brand-mark">B</span>
+                <span class="brand-name">Bahez<span class="dot">.</span></span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Main">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#work" data-i18n="nav.work">Work</a>
+                <a href="#experience" data-i18n="nav.exp">Experience</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button data-lang="en" class="active">EN</button>
+                    <button data-lang="ckb">کوردی</button>
+                    <button data-lang="ar">عربي</button>
+                </div>
+                <a href="#contact" class="btn btn-teal btn-sm hide-sm" data-i18n="nav.cta">Let's talk</a>
+                <button class="menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+                    <span class="menu-btn-label" data-i18n="menu.label">Menu</span>
+                    <span class="menu-btn-lines"><span></span><span></span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="container hero-grid">
+            <div class="hero-text reveal">
+                <span class="eyebrow"><span class="pulse"></span><span data-i18n="hero.badge">Available for new projects</span></span>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.t1">Code that works</span>
+                    <em class="serif" data-i18n="hero.t2">as hard</em>
+                    <span data-i18n="hero.t3">as you do.</span>
+                </h1>
+                <p class="hero-sub" data-i18n="hero.sub">I'm Bahez — a web developer building fast websites, web apps and management systems for businesses across Kurdistan and Iraq.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-teal"><span data-i18n="hero.cta1">Start a project</span> <i class="fas fa-arrow-right flip-rtl"></i></a>
+                    <a href="#work" class="btn btn-ghost" data-i18n="hero.cta2">See my work</a>
+                </div>
+                <ul class="hero-points">
+                    <li><i class="fas fa-check"></i><span data-i18n="hero.p1">Reply within 1 day</span></li>
+                    <li><i class="fas fa-check"></i><span data-i18n="hero.p2">Clear price before starting</span></li>
+                    <li><i class="fas fa-check"></i><span data-i18n="hero.p3">Free fixes after launch</span></li>
+                </ul>
+            </div>
+
+            <div class="hero-card reveal delay-1">
+                <button class="profile-photo" id="profile-trigger" aria-label="Open profile">
+                    <img src="Capture.PNG" alt="Bahez Khalid Salih" width="366" height="418">
+                </button>
+                <div class="float-chip chip-1"><i class="fas fa-code"></i> <span>Full-stack</span></div>
+                <div class="float-chip chip-2"><i class="fas fa-bolt"></i> <span data-i18n="hero.chip">Fast &amp; modern</span></div>
+                <div class="hero-card-foot">
+                    <strong>Bahez Khalid Salih</strong>
+                    <span data-i18n="hero.role">Web Developer · ‌Hajiawa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Tech strip ===== -->
+    <div class="strip">
+        <div class="strip-track">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>PHP</span><span>Python</span><span>MySQL</span><span>Bootstrap</span><span>Tailwind</span>
+            <span aria-hidden="true">HTML</span><span aria-hidden="true">CSS</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">React</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">PHP</span><span aria-hidden="true">Python</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">Bootstrap</span><span aria-hidden="true">Tailwind</span>
+        </div>
+    </div>
+
+    <!-- ===== Why me ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="about.kicker">Why work with me</span>
+                <h2 class="section-title"><span data-i18n="about.t1">Less hassle.</span> <em class="serif" data-i18n="about.t2">Clearer results.</em></h2>
+                <p class="section-sub" data-i18n="about.sub">Many businesses still run on Excel files, paper and WhatsApp groups. I replace that with clean software built around how you actually work.</p>
+            </div>
+            <div class="why-grid">
+                <article class="why-card reveal"><span class="num">01</span><h3 data-i18n="why.1t">One system, not ten spreadsheets</h3><p data-i18n="why.1p">Sales, stock and customers in one place — on your phone.</p></article>
+                <article class="why-card reveal delay-1"><span class="num">02</span><h3 data-i18n="why.2t">A clear price, upfront</h3><p data-i18n="why.2p">Scope, price and date agreed before any work starts.</p></article>
+                <article class="why-card reveal delay-2"><span class="num">03</span><h3 data-i18n="why.3t">Free fixes after launch</h3><p data-i18n="why.3p">If something breaks after launch, I fix it at no cost.</p></article>
+                <article class="why-card reveal"><span class="num">04</span><h3 data-i18n="why.4t">Everything is yours</h3><p data-i18n="why.4p">Source code, domain and accounts — handed over to you.</p></article>
+                <article class="why-card reveal delay-1"><span class="num">05</span><h3 data-i18n="why.5t">Kurdish, Arabic &amp; English</h3><p data-i18n="why.5p">Right-to-left designed properly — not bolted on.</p></article>
+                <article class="why-card why-card-dark reveal delay-2">
+                    <h3 data-i18n="why.ctaT">Have an idea?</h3>
+                    <p data-i18n="why.ctaP">Tell me about it — the first conversation is free.</p>
+                    <a href="#contact" class="btn btn-teal btn-sm" data-i18n="nav.cta">Let's talk</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section section-tint" id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="svc.kicker">Services</span>
+                <h2 class="section-title"><span data-i18n="svc.t1">Everything you need</span> <em class="serif" data-i18n="svc.t2">to go online.</em></h2>
+            </div>
+            <div class="svc-grid">
+                <article class="svc-card reveal">
+                    <div class="svc-icon"><i class="fas fa-globe"></i></div>
+                    <h3 data-i18n="svc.1t">Website Development</h3>
+                    <p data-i18n="svc.1p">Fast on a phone, found on Google, in the languages your customers read.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.1e">2–4 weeks</span></span>
+                </article>
+                <article class="svc-card reveal delay-1">
+                    <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 data-i18n="svc.2t">Web Applications</h3>
+                    <p data-i18n="svc.2p">Your own process built into software your team can use on any device.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.2e">6–12 weeks</span></span>
+                </article>
+                <article class="svc-card reveal delay-2">
+                    <div class="svc-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="svc.3t">Management Systems</h3>
+                    <p data-i18n="svc.3p">Sales, stock, staff and orders in one place, with numbers you can trust.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.3e">6–12 weeks</span></span>
+                </article>
+                <article class="svc-card reveal">
+                    <div class="svc-icon"><i class="fas fa-cart-shopping"></i></div>
+                    <h3 data-i18n="svc.4t">E-commerce</h3>
+                    <p data-i18n="svc.4p">Your products online with orders your team can actually keep up with.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.4e">4–8 weeks</span></span>
+                </article>
+                <article class="svc-card reveal delay-1">
+                    <div class="svc-icon"><i class="fab fa-python"></i></div>
+                    <h3 data-i18n="svc.5t">Automation &amp; Scripts</h3>
+                    <p data-i18n="svc.5p">Python tools that do the boring, repetitive work for you.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.5e">1–3 weeks</span></span>
+                </article>
+                <article class="svc-card reveal delay-2">
+                    <div class="svc-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3 data-i18n="svc.6t">Support &amp; Maintenance</h3>
+                    <p data-i18n="svc.6p">Updates, backups, security hardening and fixes so your site keeps running smoothly.</p>
+                    <span class="svc-time"><i class="far fa-clock"></i> <span data-i18n="svc.6e">Monthly</span></span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section class="section" id="work">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="work.kicker">Selected work</span>
+                <h2 class="section-title"><span data-i18n="work.t1">Projects I'm</span> <em class="serif" data-i18n="work.t2">proud of.</em></h2>
+            </div>
+            <div class="work-grid work-grid-single">
+                <article class="work-card work-card-wide reveal" id="smk-card" tabindex="0" role="button" aria-haspopup="dialog" aria-label="SmartMeter info">
+                    <div class="work-visual v-smk">
+                        <img src="smk-screenshot.png" alt="Smart Meter screenshot" loading="lazy">
+                        <span class="info-badge"><i class="fas fa-circle-info"></i> <span data-i18n="smk.info">Info</span></span>
+                    </div>
+                    <div class="work-body">
+                        <span class="tag">Web App · BHM Team</span>
+                        <h3>Smart Meter</h3>
+                        <p data-i18n="work.1p">A smart electricity calculator for Kurdistan: calculates your bill by the official tariffs, tracks home devices, scans bills with the camera and charts your monthly usage.</p>
+                        <div class="chips"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Chart.js</span><span>Tesseract OCR</span></div>
+                        <button class="btn btn-teal btn-sm info-btn" type="button"><i class="fas fa-circle-info"></i> <span data-i18n="smk.more">Info — learn more</span></button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Process ===== -->
+    <section class="section section-tint" id="process">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="proc.kicker">How I work</span>
+                <h2 class="section-title"><span data-i18n="proc.t1">From idea to launch,</span> <em class="serif" data-i18n="proc.t2">step by step.</em></h2>
+            </div>
+            <ol class="process">
+                <li class="step reveal"><span class="step-icon"><i class="fas fa-comments"></i></span><span class="step-n">01</span><h3 data-i18n="proc.1t">Discuss</h3><p data-i18n="proc.1p">We talk about your goals, users and budget.</p></li>
+                <li class="step reveal delay-1"><span class="step-icon"><i class="fas fa-pen-ruler"></i></span><span class="step-n">02</span><h3 data-i18n="proc.2t">Design</h3><p data-i18n="proc.2p">A clear plan and design you approve before coding.</p></li>
+                <li class="step reveal delay-2"><span class="step-icon"><i class="fas fa-code"></i></span><span class="step-n">03</span><h3 data-i18n="proc.3t">Build &amp; secure</h3><p data-i18n="proc.3p">Clean, fast code with a secure database and regular updates.</p></li>
+                <li class="step reveal"><span class="step-icon"><i class="fas fa-rocket"></i></span><span class="step-n">04</span><h3 data-i18n="proc.4t">Launch &amp; support</h3><p data-i18n="proc.4p">Go live, hand over everything, and stay for support.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker kicker-light" data-i18n="skills.kicker">Skills</span>
+                <h2 class="section-title"><span data-i18n="skills.t1">The tools</span> <em class="serif" data-i18n="skills.t2">I build with.</em></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill reveal"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="skill reveal"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill reveal"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill reveal"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="skill reveal"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                <div class="skill reveal"><i class="fab fa-php"></i><span>PHP</span></div>
+                <div class="skill reveal"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill reveal"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="skill reveal"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="skill reveal"><i class="fas fa-wind"></i><span>Tailwind</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+        <div class="container exp-wrap">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="exp.kicker">Experience</span>
+                <h2 class="section-title"><span data-i18n="exp.t1">My journey</span> <em class="serif" data-i18n="exp.t2">so far.</em></h2>
+                <p class="section-sub" data-i18n="exp.sub">Every project taught me something new — here are the milestones.</p>
+            </div>
+            <!-- TODO: replace years/roles with your real experience -->
+            <ol class="timeline">
+                <li class="tl-item reveal">
+                    <span class="tl-year">2026 — <span data-i18n="exp.now">Now</span></span>
+                    <h3 data-i18n="exp.1t">Freelance Full-stack Developer</h3>
+                    <p data-i18n="exp.1p">Building websites, web apps and management systems for clients across Kurdistan.</p>
+                </li>
+                <li class="tl-item reveal">
+                    <span class="tl-year">2025</span>
+                    <h3 data-i18n="exp.2t">Smart Meter project with BHM Team</h3>
+                    <p data-i18n="exp.2p">Designed and built an electricity calculator with PHP, MySQL and JavaScript.</p>
+                </li>
+                <li class="tl-item reveal">
+                    <span class="tl-year">2024</span>
+                    <h3 data-i18n="exp.3t">Started the web development path</h3>
+                    <p data-i18n="exp.3p">Learned HTML, CSS, JavaScript, PHP and Python, and built my first real projects.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section section-tint" id="testimonials">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="kicker" data-i18n="testi.kicker">Testimonials</span>
+                <h2 class="section-title"><span data-i18n="testi.t1">What clients</span> <em class="serif" data-i18n="testi.t2">say.</em></h2>
+            </div>
+            <!-- TODO: replace with real client reviews -->
+            <div class="testi-grid">
+                <figure class="testi reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote data-i18n="testi.1q">“Fast, professional and always available. The website turned out better than we imagined.”</blockquote>
+                    <figcaption><span class="avatar">A</span><span><strong data-i18n="testi.1n">Client name</strong><small data-i18n="testi.1r">Business owner · Erbil</small></span></figcaption>
+                </figure>
+                <figure class="testi reveal delay-1">
+                    <div class="stars">★★★★★</div>
+                    <blockquote data-i18n="testi.2q">“Our management system saves us hours every week. Clear price and great support.”</blockquote>
+                    <figcaption><span class="avatar">S</span><span><strong data-i18n="testi.2n">Client name</strong><small data-i18n="testi.2r">Store manager · Sulaymaniyah</small></span></figcaption>
+                </figure>
+                <figure class="testi reveal delay-2">
+                    <div class="stars">★★★★★</div>
+                    <blockquote data-i18n="testi.3q">“He understood exactly what we needed and delivered on time. Highly recommended.”</blockquote>
+                    <figcaption><span class="avatar">K</span><span><strong data-i18n="testi.3n">Client name</strong><small data-i18n="testi.3r">Startup founder · Duhok</small></span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="cta-box reveal">
+                <div class="cta-text">
+                    <span class="kicker kicker-light" data-i18n="contact.kicker">Contact</span>
+                    <h2 class="section-title"><span data-i18n="contact.t1">Let's build</span> <em class="serif" data-i18n="contact.t2">something great.</em></h2>
+                    <p data-i18n="contact.sub">Send me a message — I usually reply within one working day.</p>
+                    <div class="hero-cta">
+                        <a href="mailto:bahezxalid46@gmail.com" class="btn btn-teal"><i class="fas fa-envelope"></i> <span data-i18n="contact.email">Email me</span></a>
+                        <a href="https://wa.me/message/JQ2PFRZ34LWEN1" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-light"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="name" required data-i18n-ph="form.name" placeholder="Your name">
+                    <textarea name="message" rows="4" required data-i18n-ph="form.msg" placeholder="Tell me about your project..."></textarea>
+                    <button type="submit" class="btn btn-teal"><span data-i18n="form.send">Send message</span> <i class="fas fa-paper-plane flip-rtl"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="brand brand-light">
+                        <span class="brand-mark">B</span>
+                        <span class="brand-text">
+                            <span class="brand-name">Bahez Khalid Salih</span>
+                            <span class="brand-sub" data-i18n="footer.sub">Full-stack web developer</span>
+                        </span>
+                    </a>
+                    <p data-i18n="footer.tagline">Secure, fast and multilingual websites and systems — designed and built by Bahez.</p>
+                    <div class="social-pills">
+                        <a href="https://www.instagram.com/bahezz.ch?psln=b3RwMHFhOGdmeDA0" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://www.facebook.com/share/1CLBJDNk4c/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="https://t.me/ameerkuait" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a href="https://wa.me/message/JQ2PFRZ34LWEN1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.navigate">Navigate</h4>
+                    <a href="#home" data-i18n="nav.home">Home</a>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#services" data-i18n="nav.services">Services</a>
+                    <a href="#work" data-i18n="nav.work">Work</a>
+                    <a href="#skills" data-i18n="nav.skills">Skills</a>
+                    <a href="#experience" data-i18n="nav.exp">Experience</a>
+                    <a href="#testimonials" data-i18n="nav.testi">Testimonials</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.capabilities">Capabilities</h4>
+                    <a href="#services" data-i18n="svc.1t">Website Development</a>
+                    <a href="#services" data-i18n="svc.2t">Web Applications</a>
+                    <a href="#services" data-i18n="svc.3t">Management Systems</a>
+                    <a href="#services" data-i18n="svc.5t">Automation &amp; Scripts</a>
+                    <a href="#services" class="link-strong"><span data-i18n="footer.explore">Explore services</span> <i class="fas fa-arrow-right flip-rtl"></i></a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="nav.contact">Contact</h4>
+                    <a href="https://wa.me/message/JQ2PFRZ34LWEN1" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp icon-teal"></i> <span data-i18n="footer.chat">Chat on WhatsApp</span></a>
+                    <a href="mailto:bahezxalid46@gmail.com"><i class="fas fa-envelope icon-teal"></i> bahezxalid46@gmail.com</a>
+                    <a href="#contact" class="btn-outline-dark"><span data-i18n="footer.contactMe">Contact me</span> <i class="fas fa-arrow-up-right-from-square fa-xs"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Bahez Khalid Salih. <span data-i18n="footer.rights">All rights reserved.</span></p>
+                <p class="visitors"><i class="fas fa-eye"></i> <span data-i18n="footer.visitors">Visitors</span>: <strong id="visitor-count">...</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Drawer menu ===== -->
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+        <div class="drawer-head">
+            <span class="drawer-title" data-i18n="menu.label">Menu</span>
+            <button class="drawer-close" id="menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#home"><span class="dn">01</span><span data-i18n="nav.home">Home</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#about"><span class="dn">02</span><span data-i18n="nav.about">About</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#services"><span class="dn">03</span><span data-i18n="nav.services">Services</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#work"><span class="dn">04</span><span data-i18n="nav.work">Work</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#skills"><span class="dn">05</span><span data-i18n="nav.skills">Skills</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#experience"><span class="dn">06</span><span data-i18n="nav.exp">Experience</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#testimonials"><span class="dn">07</span><span data-i18n="nav.testi">Testimonials</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+            <a href="#contact"><span class="dn">08</span><span data-i18n="nav.contact">Contact</span><i class="fas fa-arrow-right flip-rtl"></i></a>
+        </nav>
+        <div class="drawer-foot">
+            <div class="lang-switch lang-switch-dark" role="group" aria-label="Language">
+                <button data-lang="en" class="active">EN</button>
+                <button data-lang="ckb">کوردی</button>
+                <button data-lang="ar">عربي</button>
+            </div>
+            <a href="mailto:bahezxalid46@gmail.com" class="drawer-mail">bahezxalid46@gmail.com</a>
+            <div class="drawer-social">
+                <a href="https://www.instagram.com/bahezz.ch?psln=b3RwMHFhOGdmeDA0" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1CLBJDNk4c/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/ameerkuait" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/message/JQ2PFRZ34LWEN1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ===== Profile modal ===== -->
+    <div class="profile-overlay" id="profile-overlay">
+        <div class="profile-card" role="dialog" aria-label="Profile">
+            <button class="close-btn" id="profile-close" aria-label="Close profile"><i class="fas fa-times"></i></button>
+            <img src="Capture.PNG" alt="Bahez Khalid Salih" class="profile-img" loading="lazy">
+            <h3>Bahez Khalid Salih</h3>
+            <span class="kicker" data-i18n="hero.role">Web Developer · Erbil</span>
+            <p data-i18n="profile.bio">A passionate web developer building modern, high-performance digital experiences. Focused on precision and clean design, turning complex ideas into elegant solutions.</p>
+        </div>
+    </div>
+
+    <!-- ===== SmartMeter info modal ===== -->
+    <div class="smk-overlay" id="smk-overlay">
+        <div class="smk-modal" role="dialog" aria-modal="true" aria-labelledby="smk-title">
+            <button class="close-btn" id="smk-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <div class="smk-head">
+                <img src="smk-team.jpg" alt="BHM Team logo" class="smk-logo" loading="lazy">
+                <div>
+                    <span class="kicker" data-i18n="smk.kicker">Project info</span>
+                    <h3 id="smk-title">⚡ Smart Meter</h3>
+                    <p data-i18n="smk.sub">Kurdistan electricity calculator &amp; guide — built by BHM Team, a team of three developers, to help citizens know their electricity cost quickly and easily.</p>
+                </div>
+            </div>
+
+            <div class="smk-stats">
+                <div><strong>6</strong><span data-i18n="smk.s1">Subscriber types</span></div>
+                <div><strong>5</strong><span data-i18n="smk.s2">Home tariff tiers</span></div>
+                <div><strong>3</strong><span data-i18n="smk.s3">Languages</span></div>
+                <div><strong>7</strong><span data-i18n="smk.s4">Database tables</span></div>
+            </div>
+
+            <h4 class="smk-h" data-i18n="smk.fTitle">Features</h4>
+            <div class="smk-features">
+                <div class="smk-f"><i class="fas fa-calculator"></i><div><b data-i18n="smk.f1t">Bill calculator</b><p data-i18n="smk.f1p">Daily, weekly, monthly and yearly cost using official tariffs — home (72–350 IQD per kWh), commercial, industrial, government and agricultural.</p></div></div>
+                <div class="smk-f"><i class="fas fa-plug"></i><div><b data-i18n="smk.f2t">Amp → Watt converter</b><p data-i18n="smk.f2p">Convert amperes to watts at 220V, 180V or 110V and send the result straight to the calculator.</p></div></div>
+                <div class="smk-f"><i class="fas fa-house"></i><div><b data-i18n="smk.f3t">My Home</b><p data-i18n="smk.f3p">Add your home devices and see total monthly cost, kWh, and total amps against the 40A limit.</p></div></div>
+                <div class="smk-f"><i class="fas fa-chart-line"></i><div><b data-i18n="smk.f4t">Bills &amp; charts</b><p data-i18n="smk.f4p">Track monthly bills on a dynamic curve chart, and scan a paper bill with the camera (OCR).</p></div></div>
+                <div class="smk-f"><i class="fas fa-bell"></i><div><b data-i18n="smk.f5t">Smart alerts</b><p data-i18n="smk.f5p">Get notified when usage passes 400, 800, 1200 or 1600 kWh, or when load reaches 40 amps.</p></div></div>
+                <div class="smk-f"><i class="fas fa-lightbulb"></i><div><b data-i18n="smk.f6t">Saving tips, history &amp; FAQ</b><p data-i18n="smk.f6p">Practical tips to cut your bill, saved calculation history, and answers to common questions.</p></div></div>
+                <div class="smk-f"><i class="fas fa-palette"></i><div><b data-i18n="smk.f7t">Personal settings</b><p data-i18n="smk.f7p">Kurdish, Arabic and English, dark/light mode, a custom main color, and export results as an image.</p></div></div>
+                <div class="smk-f"><i class="fas fa-shield-halved"></i><div><b data-i18n="smk.f8t">Accounts &amp; security</b><p data-i18n="smk.f8p">User accounts with brute-force login protection and protected server configuration.</p></div></div>
+            </div>
+
+            <h4 class="smk-h" data-i18n="smk.tTitle">Built with</h4>
+            <div class="chips"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML / CSS</span><span>Chart.js</span><span>Tesseract.js (OCR)</span><span>html2canvas</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
